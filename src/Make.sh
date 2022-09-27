@@ -57,6 +57,7 @@ style () {
 
 packages () {
   list=`grep -sl $1 */$2*.h`
+  echo $list
   if (test -e packages_$3.tmp) then
     rm -f packages_$3.tmp
   fi
